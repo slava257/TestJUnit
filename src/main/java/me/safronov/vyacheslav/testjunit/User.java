@@ -35,7 +35,7 @@ public class User {
                 }
             }
         }
-        return false;
+        throw new IncorrectEmailFormatException();
     }
 
     public boolean checkingForAMatchOfLoginAndEmail() {

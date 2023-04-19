@@ -16,14 +16,14 @@ import org.junit.jupiter.api.Test;
 //Создайте тест, который определяет, равны ли login и email (Они не должны быть равны).
 public class UserTest {
     private static final String login = "ad55";
-    private static final String email = "ad55@.com";
+    private static final String email = "ad5@.com";
 
 
     @Test
     public void shouldConstructorUser() {
         User user = new User(login, email);
         Assertions.assertEquals("ad55", user.getLogin());
-        Assertions.assertEquals("ad55@.com", user.getEmail());
+        Assertions.assertEquals("ad5@.com", user.getEmail());
     }
 
     @Test
